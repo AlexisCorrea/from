@@ -1,0 +1,19 @@
+.contenedor {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  background: #a05000e0;
+  border-radius: 1%;
+  padding: 3%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+  color: #a05000e0;
+  background-color: #e9ecef;
+  border-color: #a05000e0;
+  margin-left: 28%;
+  width: 45%;
+  margin-top: 2%;
+}

@@ -1,0 +1,40 @@
+INICIAR
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 8080
+
+CREAR TABLA
+aws dynamodb create-table --endpoint-url http://localhost:8200 --table-name user --attribute-definitions AttributeName=id,AttributeType=S --key-schema AttributeName=id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1
+
+
+VER TABLAS
+aws dynamodb list-tables --endpoint-url http://localhost:8080
+
+
+VER TABLA
+aws dynamodb describe-table --table-name Product --endpoint-url http://localhost:8080
+
+
+CREAR TABLA VIA JSON 
+aws dynamodb create-table --cli-input-json file://nombre_archivo.json --endpoint-url http://localhost:8000
+
+
+
+PUT CON VIA JSON 
+aws dynamodb put-item --table-name Usuarios --item file://item.json --return-consumed-capacity TOTAL --endpoint-url http://localhost:8080 
+ {
+	"id": {"S": "No One You Know"}, 
+	"name": {"S": "Call Me Today"}, 
+	"email": {"S": "Somewhat Famous"} } 
+
+CONSULTA VIA JSON
+aws dynamodb get-item --table-name user --key file://key.json --endpoint-url http://localhost:8080
+
+JSON DE CONSULTA 
+
+{
+    "key": {"type": "value"}
+}
+
+
+
+CONSULTA GENERAL
+aws dynamodb scan --table-name user --endpoint-url http://localhost:8080

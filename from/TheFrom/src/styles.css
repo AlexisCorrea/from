@@ -1,0 +1,7 @@
+body{
+  background-image: url('../src/assets/img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 3%;
+}

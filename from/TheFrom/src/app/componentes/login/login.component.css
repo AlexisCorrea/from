@@ -1,0 +1,25 @@
+form.contenedor {
+  width: 30%;
+  margin: auto;
+  margin-top: 3%;
+  background: #a05000e0;
+  border-radius: 2%;
+  padding: 3%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+#login-label{
+  text-align: center;
+  margin-left: 35%;
+  font-size: 37px;
+  font-family: 'Anton', sans-serif;
+}
+.btn-primary {
+  color: #a05000e0;
+  background-color: #e9ecef;
+  border-color: #a05000e0;
+  margin-left: 26%;
+  width: 45%;
+  margin-top: 2%;
+}
+

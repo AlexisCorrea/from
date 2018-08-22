@@ -1,0 +1,18 @@
+{
+    "TableName": "lugares",
+	"KeySchema": [
+      { "AttributeName": "id", "KeyType": "HASH" },
+      { "AttributeName": "nombre", "KeyType": "RANGER" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "id", "AttributeType": "S" },
+      { "AttributeName": "nombre", "AttributeType": "S" },
+      { "AttributeName": "correo", "AttributeType": "S" },
+      { "AttributeName": "telefono", "AttributeType": "S" },
+      { "AttributeName": "fotoname", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 1,
+      "WriteCapacityUnits": 1
+    }
+}

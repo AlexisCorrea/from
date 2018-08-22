@@ -1,0 +1,34 @@
+.separacion{
+  margin-right: 5px;
+}
+.contenedor{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.card {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.form-control{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#ingresar{
+  margin-bottom: 6%;
+}
+
+#registrar{
+  margin-left: 3%;
+}
+
+.login-container {
+  background-image: url('../../../public/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 3%;
+}

@@ -1,0 +1,7 @@
+{
+	"id": {"S": "1"}, 
+	"name": {"S": "Alexis"}, 
+	"email": {"S": "alexis@gmail.com"},
+	"phone": {"S": "305308"},
+	"photoName": {"S": "alx.jpg"}
+} 
